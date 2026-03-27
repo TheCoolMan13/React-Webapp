@@ -12,6 +12,11 @@ function App() {
     { UserId: 'Bob', UserAge: 30 },
   ]);
 
+  const handleEditUser = (indexToEdit, newName, newAge) => {
+    const updatedUsers = [...users];
+    updatedUsers[indexToEdit] = { UserId: newName, UserAge: newAge };
+    setUsers(updatedUsers);
+  }
 
   const [name, setName] = useState("");
   const [age, setAge] = useState('');
@@ -54,8 +59,10 @@ function App() {
         {users.map((user, index) => (
           <Card
             key={index}
+            index={index}
             UserId={user.UserId}
             UserAge={user.UserAge}
+            onEdit={handleEditUser}
           />
         ))}
       </div>

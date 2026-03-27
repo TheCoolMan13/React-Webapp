@@ -25,6 +25,7 @@
     /* Slightly rounds the corners so it's not completely sharp */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
     /* Adds a soft drop shadow */
+    position: relative;
 }
 
 /* Styling the specific text inside */
@@ -41,4 +42,26 @@
     color: #586069;
     /* Lighter grey to show it's secondary info */
     font-weight: 500;
+}
+
+.edit-button {
+    position: absolute;
+    top: 16px;
+    /* Distance from the top edge */
+    right: 16px;
+    /* Distance from the right edge */
+
+    /* Optional Polish to make it look clickable */
+    cursor: pointer;
+    font-size: 1.2rem;
+    /* Makes the icon a little bigger */
+    color: #888;
+    /* Makes it a subtle grey */
+    transition: 0.2s;
+    /* Smooth animation for the hover effect */
+}
+
+/* Changes the color when you hover over it */
+.edit-button:hover {
+    color: #333;
 }
