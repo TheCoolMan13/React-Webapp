@@ -1,3 +1,4 @@
-.HelloWorldStyle {
-    color: blue;
+.cards-container {
+    flex: auto;
+
 }

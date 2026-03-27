@@ -1,0 +1,44 @@
+.box {
+    /* 1. The Box Shape & Color */
+    background-color: #aaaaaa;
+    /* A nice light, modern greyish color */
+    width: 250px;
+    /* Keeps the card a consistent size */
+    min-height: 150px;
+    /* Forces the box to be tall enough to have a top and bottom */
+    padding: 24px;
+    /* Breathing room inside the box */
+    margin: 16px;
+    /* Replaces your 800px margin so cards don't touch each other */
+
+    /* 2. Flexbox Magic (Positions the text) */
+    display: flex;
+    flex-direction: column;
+    /* Stacks items vertically */
+    justify-content: space-between;
+    /* Pushes the first item to the top, last item to the bottom */
+
+    /* 3. The Polish (Optional but recommended) */
+    border: 1px solid #e1e4e8;
+    /* Very subtle border */
+    border-radius: 8px;
+    /* Slightly rounds the corners so it's not completely sharp */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    /* Adds a soft drop shadow */
+}
+
+/* Styling the specific text inside */
+.user-name {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #24292e;
+    /* Dark grey instead of harsh black */
+}
+
+.user-age {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #586069;
+    /* Lighter grey to show it's secondary info */
+    font-weight: 500;
+}
